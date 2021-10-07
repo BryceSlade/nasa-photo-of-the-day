@@ -1,5 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import styled from 'styled-components';
+
+const StyleCopyright = styled.p`
+    font-size: 1.2rem;
+    font-weight: bold;
+`;
 
 export default function Description() {
     const [copyright, setCopyright] = useState('')
@@ -16,7 +22,7 @@ export default function Description() {
 
     return (
         <div className='copyright_container'>
-            <p>{copyright}</p>
+            <StyleCopyright> Credit: {copyright}</StyleCopyright>
         </div>
     )
 

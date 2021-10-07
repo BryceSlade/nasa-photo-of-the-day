@@ -1,5 +1,20 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import styled from 'styled-components';
+
+const StyleDate = styled.div`
+    width: 45%;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 1.6rem;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+`;
 
 export default function Date() {
     const [date, setDate] = useState('')
@@ -15,9 +30,9 @@ export default function Date() {
 }, [])
 
     return (
-        <div className='date_container'>
+        <StyleDate className='date_container'>
             <p>{date}</p>
-        </div>
+        </StyleDate>
     )
 
 }

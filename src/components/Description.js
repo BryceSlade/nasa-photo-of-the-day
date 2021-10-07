@@ -1,5 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import styled from 'styled-components';
+
+const StyleDesc = styled.div`
+    display: flex;
+    justify-content: center;
+
+    p {
+        border: 1px solid black;
+        width: 50%;
+        padding: 2vh;
+    }
+`;
 
 export default function Description() {
     const [desc, setDesc] = useState('')
@@ -15,9 +27,9 @@ export default function Description() {
 }, [])
 
     return (
-        <div className='desc_container'>
+        <StyleDesc className='desc_container'>
             <p>{desc}</p>
-        </div>
+        </StyleDesc>
     )
 
 }
