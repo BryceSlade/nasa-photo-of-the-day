@@ -18,9 +18,9 @@ function App() {
       <Title/>
       <Image/>
       <Description/>
-      {/* <Date/> */}
+      <Date/>
       <footer>
-        {/* <Copyright/> */}
+      <p> Credit: <Copyright/> </p>  
       </footer>
     </div>
 
